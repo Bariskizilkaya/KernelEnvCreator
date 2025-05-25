@@ -50,7 +50,7 @@ echo "wheezy.img downloaded successfully."
 
 echo "Trying to emulate the kernel with QEMU..."
 
-qemu-system-x86_64 \
+qemu-system-x86_64 -s -S\
 	-m 2G \
 	-smp 2 \
 	-kernel arch/x86/boot/bzImage \
